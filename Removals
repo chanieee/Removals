@@ -1,0 +1,52 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+	int O, C, A, S, Radius, Length, Width, Arr, Size, Counter;
+	cout<<"Input NUMBERS ONLY"<<endl; 
+	cout<<"1-circle"<<endl;
+	cout<<"2-square"<<endl;
+	cout<<"3-array"<<endl;
+
+	cout<<"What operation to do: "<<endl;
+	cin>>O;
+
+	switch(O) // This is to operate all factors within variable O
+	{
+	case 1: (O=1);
+		cout<<"Input Radius: "<<endl;
+		cin>>Radius;
+		cout<<"Area: "<<2*3.14*(Radius*Radius)<<endl; //formula for area
+		cout<<"Circumference: "<<2*3.14*Radius<<endl; //formula for circumference
+		break;
+
+	case 2: (O=2);
+		cout<<"Input Length: "<<endl;
+		cin>>Length;
+		cout<<"Input Width: "<<endl;
+		cin>>Width;
+		cout<<"Area: "<<Length*Width<<endl; //formula for area
+		cout<<"Perimeter: "<<(2*Length)+(2*Width)<<endl; //formula for perimeter
+		break;
+
+	case 3: (O=3);
+		cout<<"Input Size: "<<endl;
+		cin>>Size;
+		cout<<"Input an Array: "<<endl;
+		cin>>Arr;
+		for(int i=0; i<Size; i++)
+		{
+				cout<<Arr<<", ";
+				
+		}
+		break;
+	}
+
+
+	
+
+	getch();
+	return 0;
+}
